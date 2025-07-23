@@ -1,0 +1,5 @@
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at HangfireAutomata.Program.sendMail(String messageSubject, String messageContext, String mailtoWHO, String mailfromWHOM, String mailPass, Boolean shouldLog) in C:\Users\user\source\repos\HangfireAutomata\HangfireAutomata\Program.cs:line 177
