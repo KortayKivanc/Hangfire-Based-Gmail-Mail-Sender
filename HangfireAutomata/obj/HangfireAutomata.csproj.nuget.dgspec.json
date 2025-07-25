@@ -51,6 +51,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
+            "Hangfire.AspNet": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
             "Hangfire.Core": {
               "target": "Package",
               "version": "[1.8.20, )"
@@ -66,6 +74,18 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Microsoft.Owin.Host.HttpListener": {
+              "target": "Package",
+              "version": "[4.2.3, )"
+            },
+            "Microsoft.Owin.Hosting": {
+              "target": "Package",
+              "version": "[4.2.3, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

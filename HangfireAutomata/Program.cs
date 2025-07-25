@@ -2,12 +2,10 @@
 using Hangfire.MemoryStorage;
 using Hangfire.SqlServer;
 using HangfireAutomata.Module;
-using System;
 using System.Globalization;
-using System.IO;
-using System.Net;
 using System.Net.Mail;
-using System.Runtime.CompilerServices;
+
+using Owin;
 
 //Bu projede bir console uygulaması geliştireceksin.
 //Uygulamanın amacı, arka planda görev çalıştırmak için Hangfire’ı kullanmak olacak.
@@ -27,7 +25,6 @@ namespace HangfireAutomata
     internal class Program
     {
 		public static List<Options> options_mainScreen;
-		const string logFolder = "..\\..\\LogFiles\\";
 
 		static void Main(string[] args)
         {
@@ -55,9 +52,6 @@ namespace HangfireAutomata
 				int index = 0;
 
 				WriteMenu(options_mainScreen, options_mainScreen[index]);
-
-
-				
 				ConsoleKeyInfo pressedKey;
 				do
 				{
@@ -153,67 +147,18 @@ namespace HangfireAutomata
 			string messageContext = Console.ReadLine();
 
 
-			BackgroundJob.Schedule(() => sendMail(messageSubject, messageContext, mailtoWHO, mailfromWHOM, mailPass, shouldLog), ts);
-			
-			
+			Services.MailSendService.ScheduleAMail(messageSubject, messageContext, mailtoWHO,
+			mailfromWHOM, mailPass, shouldLog, ts);
+
 			Console.WriteLine("Geri dönmek için B tuşuna basınız..");
 			while (Console.ReadKey(true).Key != ConsoleKey.B) { }
 
 		}
-
-		public static void sendMail(string messageSubject, string messageContext, string mailtoWHO,
-			string mailfromWHOM, string mailPass , bool shouldLog = true)
-		{
-			MailMessage message = new MailMessage();
-			message.From = new MailAddress(mailfromWHOM);
-			message.To.Add(mailtoWHO);
-			
-			message.Subject = messageSubject;
-			
-			message.Body = messageContext;
-			SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-			client.Credentials = new System.Net.NetworkCredential(mailfromWHOM, mailPass);
-			client.EnableSsl = true;
-			try
-			{
-				client.Send(message);
-				if (shouldLog == true)
-				{
-					
-
-					string logText = $@"Mesajınız başarıyla gönderilmiştir.
-
-Konu: {messageSubject}
-
-Tarih: {DateTime.Now}
-";
-
-					Directory.CreateDirectory(logFolder);
-
-					string fileName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".txt";
-					File.WriteAllText(Path.Combine(logFolder, fileName), logText);
-				}
-			}
-			catch (Exception e) { errorHandling(e); }
-
-		}
-
-		static void errorHandling(Exception e)
-		{
-			Console.WriteLine(e);
-			string logText = e.ToString();
-			Directory.CreateDirectory(logFolder);
-
-			string fileName = DateTime.Now.ToString("crash-yyyy-MM-dd_HH-mm-ss") + ".txt";
-			File.WriteAllText(Path.Combine(logFolder, fileName), logText);
-		}
-
 		static void jobSchedule()
 		{
 			Console.Clear();
 			while (true)
-			{
-				
+			{	
 				Console.WriteLine("Mesajın Tarihini seçin (DD/MM/YYYY/HH:mm): ");
 				string taskToDate = Console.ReadLine();
 
@@ -232,9 +177,6 @@ Tarih: {DateTime.Now}
 				{
 					Console.WriteLine("lütfen geçerli bir zaman giriniz!");
 				}
-				
-				
-
 			} 
 		}
 		
@@ -263,11 +205,8 @@ Tarih: {DateTime.Now}
 
 			while (true)
 			{
-				
-				
 				try
 				{
-
 					Console.Clear();
 
 					Console.WriteLine("Görev tamamlandığında log dosyası oluşturulsun istiyor musunuz? ");
@@ -306,9 +245,8 @@ Tarih: {DateTime.Now}
 					int hour = dt.Hour;
 					int minute = dt.Minute;
 					string cron = $"{minute} {hour} * * *";
-					RecurringJob.AddOrUpdate("sendDailyMail", 
-						() => sendMail(messageSubject, messageContext, mailtoWHO, mailfromWHOM, mailPass, shouldLog), 
-						cron);
+					Services.AddReccuringJob.reccuringJob(messageSubject, messageContext,  mailtoWHO,
+			 mailfromWHOM,  mailPass, shouldLog,  cron);	
 					Console.WriteLine($"Her gün {hour:D2}:{minute:D2}'da çalışacak.");
 					Console.WriteLine("Geri dönmek için B tuşuna basınız..");
 					break;
