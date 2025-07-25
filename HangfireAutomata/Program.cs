@@ -5,8 +5,6 @@ using HangfireAutomata.Module;
 using System.Globalization;
 using System.Net.Mail;
 
-using Owin;
-
 //Bu projede bir console uygulaması geliştireceksin.
 //Uygulamanın amacı, arka planda görev çalıştırmak için Hangfire’ı kullanmak olacak.
 //Bu görevler belirli bir düzenle, zamanlı olarak veya kullanıcı isteğiyle çalıştırılabilecek.
@@ -28,17 +26,19 @@ namespace HangfireAutomata
 
 		static void Main(string[] args)
         {
-
+			 
 			bool exitStatus = false;
-
 
 			//SQL Server kullanmak için aşağıdaki yorumu kullanın.
 			GlobalConfiguration.Configuration.UseSqlServerStorage("Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=true");
 			//Local SQL Server kullanmak için aşağıdaki yorumu kullanın
 			//GlobalConfiguration.Configuration.UseMemoryStorage();
+ 
 
 			using (var server = new BackgroundJobServer())
 			{
+				
+
 				Console.WriteLine("Hangfire Server started. Press any key to exit...");
 				Thread.Sleep(500);
 				options_mainScreen = new List<Options>
