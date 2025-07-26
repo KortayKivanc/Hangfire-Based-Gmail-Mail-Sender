@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HangfireAutomata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b71abb1a6ec67e3d105fcf1156619473030b7ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f11a6fc7f968759124bb932ae1fed40d3f2ee237")]
 [assembly: System.Reflection.AssemblyProductAttribute("HangfireAutomata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HangfireAutomata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

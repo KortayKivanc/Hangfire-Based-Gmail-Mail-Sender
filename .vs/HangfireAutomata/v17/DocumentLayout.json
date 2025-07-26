@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\module\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\module\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\services\\mailsendservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\services\\mailsendservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\services\\mailconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\services\\mailconstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\services\\errorhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\services\\errorhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|c:\\users\\user\\source\\repos\\hangfireautomata\\hangfireautomata\\services\\addreccuringjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EBF75B9-9C13-4DC0-BE7A-52037F631006}|HangfireAutomata\\HangfireAutomata.csproj|solutionrelative:hangfireautomata\\services\\addreccuringjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddReccuringJob.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\AddReccuringJob.cs",
-              "RelativeDocumentMoniker": "HangfireAutomata\\Services\\AddReccuringJob.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\AddReccuringJob.cs",
-              "RelativeToolTip": "HangfireAutomata\\Services\\AddReccuringJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:01:05.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ErrorHandling.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\ErrorHandling.cs",
-              "RelativeDocumentMoniker": "HangfireAutomata\\Services\\ErrorHandling.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\ErrorHandling.cs",
-              "RelativeToolTip": "HangfireAutomata\\Services\\ErrorHandling.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T10:59:06.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MailConstructor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\MailConstructor.cs",
-              "RelativeDocumentMoniker": "HangfireAutomata\\Services\\MailConstructor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\MailConstructor.cs",
-              "RelativeToolTip": "HangfireAutomata\\Services\\MailConstructor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T10:55:26.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Program.cs",
               "RelativeDocumentMoniker": "HangfireAutomata\\Program.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Program.cs",
               "RelativeToolTip": "HangfireAutomata\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T14:40:48.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MailSendService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\MailSendService.cs",
-              "RelativeDocumentMoniker": "HangfireAutomata\\Services\\MailSendService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Services\\MailSendService.cs",
-              "RelativeToolTip": "HangfireAutomata\\Services\\MailSendService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T09:59:54.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Options.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Module\\Options.cs",
-              "RelativeDocumentMoniker": "HangfireAutomata\\Module\\Options.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\HangfireAutomata\\HangfireAutomata\\Module\\Options.cs",
-              "RelativeToolTip": "HangfireAutomata\\Module\\Options.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:15:56.9Z",
+              "WhenOpened": "2025-07-26T16:24:06.93Z",
               "EditorCaption": ""
             }
           ]

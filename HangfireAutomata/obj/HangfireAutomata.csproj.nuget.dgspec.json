@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[0.3.0, )"
             },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
             "Hangfire.Core": {
               "target": "Package",
               "version": "[1.8.20, )"
@@ -75,6 +79,10 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.2, )"
@@ -84,6 +92,10 @@
               "version": "[4.2.3, )"
             },
             "Microsoft.Owin.Host.HttpListener": {
+              "target": "Package",
+              "version": "[4.2.3, )"
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
               "target": "Package",
               "version": "[4.2.3, )"
             },
